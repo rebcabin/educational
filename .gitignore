@@ -1,0 +1,21 @@
+# CLion
+.idea/
+*.iml
+
+# CMake build directories
+cmake-build-*/
+build/
+out/
+
+# Build artifacts
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
