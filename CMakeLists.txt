@@ -8,7 +8,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(move_semantics_lib
     move_semantics_lib.cpp
     move_semantics_lib.h
-        tests/move_semantics_tests.cpp
 )
 
 # Make the header visible to dependents
@@ -39,6 +38,7 @@ FetchContent_MakeAvailable(googletest)
 
 add_executable(moves2_tests
     tests/move_semantics_tests.cpp
+    tests/move_semantics_tests2.cpp
 )
 target_link_libraries(moves2_tests
     PRIVATE
